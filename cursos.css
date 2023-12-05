@@ -146,7 +146,7 @@ text-align: left;
 font-family: cursive;}
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     header {
         flex-direction: column;
         text-align: center;
@@ -171,7 +171,7 @@ font-family: cursive;}
     }
 
     .pai {
-        width: 100%;
+        width: 90%;
         margin-bottom: 20px;
     }
 
