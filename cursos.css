@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+}
+header {
+    
+    font-family:cursive;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 4px 4px 6px black;
+    display: flex;
+    color: white;
+    background-image: url(https://get.wallhere.com/photo/illustration-digital-art-circuits-line-number-screenshot-computer-wallpaper-font-102576.jpg);
+    background-size: cover;
+}
+b {
+    margin-right: 50px;
+    font-size: 100px;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 30px;
+}
+footer {
+    margin-top: 50px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    background-image: url("https://get.wallhere.com/photo/illustration-digital-art-circuits-line-number-screenshot-computer-wallpaper-font-102576.jpg");
+   text-decoration: none;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+#icons {
+   text-decoration: none;
+    cursor:pointer;
+}
+
+
+section{
+    margin: 30px;
+    width: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:50px ;
+}
+
+.pai{box-shadow: 5px 6px 5px 6px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 220px;
+    border: 1px solid black;   
+    border-radius: 20px 10px 40px;
+}
+.pai:hover{
+    transform: scale(1.2);
+}
+
+.filho img{
+    margin-bottom: 20px;
+    content: auto;
+    padding: 0;
+    margin-top: 0;
+    width: 100px;
+    height: 90px;
+    border-radius: 20px 10px 20px;
+}
+.pesquisa {
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+    font-size: 28px;
+
+    border-radius: 20px;
+    margin: 30px;
+    height: 35px;
+    width: 40%;
+}
+.pesquisa:hover{
+    transform: scale(1.2);
+}
+nav{display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.link{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+.link a{
+    text-decoration: none;
+}
+a{text-decoration: none;
+text-transform: uppercase;
+font-family: cursive;}
+
+.descricao-curso {
+    display: none;
+}
+
+button{
+    cursor: pointer;
+     border-radius: 15px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: cursive;}
+
+    button:hover{
+        transform: scale(1.2);
+    }
+
+.link:hover{
+    transform:scale(1.2) ;
+}
+footer a{ color: white;}
+footer a:hover{
+    color:green;
+    transform:scale(1.2);
+}
+
+p{
+    font-size: 15px;
+text-align: left;
+font-family: cursive;}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    b {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        margin: 10px auto;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pai {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .filho img {
+        width:80%;
+        height: auto;
+    }
+
+    .pesquisa {
+        width: 80%;
+    }
+}
+
+/* animações */
+
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes jump-rotate {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(20px) rotate(360deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    150% {
+        transform: translateX(0);
+    }
+}
+.pesquisa {
+    animation: jump 6s ease-in-out;
+}
+.logo {
+    animation: jump-rotate 6.5s ease-in-out;
+}
+body {
+
+    animation: slide-in 1.5s ease;
+}
+header h1 {
+    animation: slide 1.5s ease-in-out;
+}
